@@ -1,0 +1,90 @@
+/* @theme maximum */
+
+@import "default";
+@import "./base.css";
+
+:root {
+  --primary: #47b660;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f8fa;
+  --bg-secondary-rgb: 246, 248, 250;
+  --text-primary: #222222;
+  --text-secondary: #555555;
+  --h2-horizontal-margin: 64px;
+}
+
+section {
+  background: url("./assets/default.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--text-primary);
+}
+
+section.lead {
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  position: absolute;
+  top: 16px;
+  left: var(--h2-horizontal-margin);
+  font-size: 48px;
+  border-bottom: 2px solid var(--primary);
+  width: calc(100% - 2 * var(--h2-horizontal-margin));
+  box-sizing: border-box;
+  text-align: left;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 36px;
+}
+
+h6 {
+  font-size: 32px;
+}
+
+pre {
+  background: rgba(var(--bg-secondary-rgb), 0.7);
+  backdrop-filter: blur(8px);
+  position: relative;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+blockquote {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border-left: 8px solid var(--primary);
+  padding: 32px;
+  margin: 16px 0;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+img[alt="avatar"] {
+  object-fit: contain;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
